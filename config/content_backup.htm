@@ -337,14 +337,14 @@ function draw2mid() {
 <script src="/static/brython_stdlib.js"></script>
 <p></p>
 <!-- 啟動 Brython -->
-<script>// <![CDATA[
+<script>
 window.onload=function(){
 // 設定 data/py 為共用程式路徑
 brython({debug:1, pythonpath:['./../data/py']});
 }
-// ]]></script>
+</script>
 <p><canvas height="400" id="plotarea" width="600"></canvas></p>
-<script type="text/python">// <![CDATA[
+<script type="text/python">
 # 導入 doc
 from browser import document as doc
 import math
@@ -396,7 +396,7 @@ ctx.closePath()
 # 填色設為白色
 ctx.fillStyle = '#fff'
 ctx.fill()
-// ]]></script><h1>head 1</h1>
+</script><h1>head 1</h1>
 <p>welcom</p>
 <p><img alt="" height="230" src="/images/mickey_mouse_PNG69.png" width="200"/></p>
 <p></p>
