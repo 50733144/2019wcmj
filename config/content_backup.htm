@@ -534,7 +534,18 @@ ctx.fill()
 <p>開啟VirtualBox選擇ubuntu的檔案</p><h1>遠端倉儲改版</h1>
 <p><span>可攜程式系統中已經內建 git, 可以在啟動 start.bat 後, 透過 path 的設定, 直接執行 git 指令.</span><br/><br/><span>建立 Git 倉儲, 共分為兩類, 一類是直接在 Github 網際介面下建立倉儲時, 要求建立 README.md 檔案, 之後可以直接在近端, 以 git clone 加上倉儲連線 URL, 將倉儲克隆一份到近端, 並以最新版本作為工作目錄, 使用者改版後, 可以直接透過 git add, commit 與 push 對遠端倉儲改版.</span><br/><br/><span>另一類則是故意在 Github 網際介面下建立倉儲時, 不要建立任何檔案, 而是在近端自行利用 git 指令建立倉儲架構, 新增內容後, 以 git remote add 設法在近端倉儲中納入 origin URL 後, 將近端倉儲版本新增提交推送到遠端.</span></p>
 <p><span>git add 可以用來新增一個檔案, 數個檔案, 或在之前提交後所新增的所有內容.<br/></span></p>
-<p><span></span></p><h1>解決辦法</h1>
+<p><span><img alt="" height="200" src="/images/cmd_89qhfkXspq.png" width="400"/></span></p>
+<p><span>git commit 執行之前, 必須使用 git config 建立臨時或永久的身分註記, 因為 GIT 在展開所有改版內容時, 必須明確登錄這些變更的作者與時間.當使用者採用 git commit -m "改版說明訊息", 此次提交到 .git 目錄下的更動內容, 均會綁定使用者身分與改版所輸入的說明訊息.</span></p>
+<p><span><img alt="" height="129" src="/images/cmd_6tumTLS7cX.png" width="500"/></span></p>
+<p><span>git push 在隨後沒有輸入遠端 URL 代號時, 表示要推送到 origin, 若透過 git remote add 設定其他代號與 URL 對應時, git push 加上代號, 就可以將此次的提交內容, 推送到指定的 URL 所在遠端倉儲.</span></p>
+<p><img alt="" height="118" src="/images/cmd_gYeAR23wpW.png" width="400"/></p>
+<p>push完可以到github倉儲確認是否有上傳成功</p>
+<p><img alt="" height="24" src="/images/chrome_6yt3MLWyAh.png" width="400"/></p>
+<p>要去靜態網頁可以打<a href="https://50733136.github.io/2019wcmj/content/%E8%BF%91%E7%AB%AF%E9%85%8D%E7%BD%AE%E8%88%87%E7%AE%A1%E7%90%86.html">https://學號.github.io/2019wcmj/</a>或是到github的設定前往靜態網頁</p>
+<p><img alt="" height="53" src="/images/chrome_PYJT8duvR0.png" width="400"/></p>
+<p><img alt="" height="206" src="/images/dS92fovdo1.png" width="400"/></p>
+<p></p>
+<p></p><h1>解決辦法</h1>
 <p>如果內容不見可到隨身系統找<img alt="" height="214" src="/images/chrome_Op8C1QoWhx.png" width="400"/></p>
 <p>把content_backup.htm複製  把content.htm刪掉<span>content_backup.htm複製</span></p>
 <p><span>把檔名改為content.htm 重開就可以找回來了</span></p><h1>VirtualBox</h1>
